@@ -4,5 +4,5 @@ from .models import Todo
 
 class TodoSerializer(serializers.ModelSerializer):
     class Meta:
-        models = Todo
+        model = Todo
         fields = '__all__'
