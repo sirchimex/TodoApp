@@ -8,9 +8,9 @@ function App() {
   return (
     <div className='bg-indigo-100 px-8 min-h-screen'>
       <nav className="pt-8">
-        <h1 className='text-5xl text-center'>Todo List</h1>
+        <h1 className='text-5xl text-center pb-12'>Todo List</h1>
       </nav>
-      {/* <TodoForm/> */}
+      <TodoForm/>
       <Table/>
     </div>
   )
