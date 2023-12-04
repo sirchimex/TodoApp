@@ -7,7 +7,7 @@ const Table = () =>{
             <table className="w-11/12 max-w-4xl">
                 <thead className="border-b-2 border-black">
                     <tr>
-                        <th className="p-3 text-sm font-semi-bold tracking-wide text-left">Check Boxes</th>
+                        <th className="p-3 text-sm font-semi-bold tracking-wide text-left">CheckBox</th>
                         <th className="p-3 text-sm font-semi-bold tracking-wide text-left">To Do</th>
                         <th className="p-3 text-sm font-semi-bold tracking-wide text-left">Status</th>
                         <th className="p-3 text-sm font-semi-bold tracking-wide text-left">Date Created</th>
@@ -16,13 +16,45 @@ const Table = () =>{
                 </thead>
                 <tbody>
                     <tr>
-                        <td className="p-3 text-sm">true</td>
+                        <td className="p-3">
+                        <span className="inline-block cursor-pointer"> <MdOutlineCheckBox /> </span>
+                        </td>
                         <td className="p-3 text-sm">Lorem ipsum dolor sit.</td>
-                        <td className="p-3 text-sm">Done</td>
+                        <td className="p-3 text-center">
+                            <span className="p-1.5 text-xs font-medium tracking-wide rounded-md bg-green-300">Done</span>
+                        </td>
                         <td className="p-3 text-sm">29-11-23</td>
-                        <td className="p-3 text-sm font-medium grid grid-flow-col">
-                            <span> <MdEditNote/> </span>
-                            <span> <MdOutlineDeleteOutline/> </span>
+                        <td className="p-3 text-sm font-medium grid grid-flow-col items-centre mt-5">
+                            <span className="text-xl cursor-pointer"> <MdEditNote/> </span>
+                            <span className="text-xl cursor-pointer"> <MdOutlineDeleteOutline/> </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td className="p-3">
+                        <span className="inline-block cursor-pointer"> <MdOutlineCheckBox /> </span>
+                        </td>
+                        <td className="p-3 text-sm">Lorem ipsum dolor sit.</td>
+                        <td className="p-3 text-center">
+                            <span className="p-1.5 text-xs font-medium tracking-wide rounded-md bg-green-300">Done</span>
+                        </td>
+                        <td className="p-3 text-sm">29-11-23</td>
+                        <td className="p-3 text-sm font-medium grid grid-flow-col items-centre mt-5">
+                            <span className="text-xl cursor-pointer"> <MdEditNote/> </span>
+                            <span className="text-xl cursor-pointer"> <MdOutlineDeleteOutline/> </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td className="p-3">
+                        <span className="inline-block cursor-pointer"> <MdOutlineCheckBox /> </span>
+                        </td>
+                        <td className="p-3 text-sm">Lorem ipsum dolor sit.</td>
+                        <td className="p-3 text-center">
+                            <span className="p-1.5 text-xs font-medium tracking-wide rounded-md bg-green-300">Done</span>
+                        </td>
+                        <td className="p-3 text-sm">29-11-23</td>
+                        <td className="p-3 text-sm font-medium grid grid-flow-col items-centre mt-5">
+                            <span className="text-xl cursor-pointer"> <MdEditNote/> </span>
+                            <span className="text-xl cursor-pointer"> <MdOutlineDeleteOutline/> </span>
                         </td>
                     </tr>
                 </tbody>
