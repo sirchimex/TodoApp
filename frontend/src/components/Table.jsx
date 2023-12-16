@@ -44,6 +44,12 @@ const Table = ({todos, setTodos, isLoading}) =>{
         console.log(editText)
     }
 
+    const handleClick = () => {
+        handleEdit(editText.id, editText)
+        setEditText({
+            'body':''
+        })
+    }
 
 
 
@@ -98,9 +104,9 @@ const Table = ({todos, setTodos, isLoading}) =>{
             <div className="modal" role="dialog">
                 <div className="modal-box">
                     <h3 className="font-bold text-lg">Edit Todo</h3>
-                    <input type="text" placeholder="Type here" onChange={handleChange} className="input input-bordered mt-8 w-full" />
+                    <input type="text" value={editText.body} onChange={handleChange} className="input input-bordered mt-8 w-full" />
                     <div className="modal-action">
-                        <label htmlFor="my_modal_6" onClick={() => handleEdit(editText.id, editText)} className="btn btn-primary">Edit</label>
+                        <label htmlFor="my_modal_6" onClick={handleClick} className="btn btn-primary">Edit</label>
                         <label htmlFor="my_modal_6" className="btn">Close</label>
                     </div>
                 </div>
